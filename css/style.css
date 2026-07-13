@@ -458,3 +458,50 @@ resize:vertical;
 min-height:120px;
 
 }
+/*=====================================
+FICHA DEL EXPEDIENTE
+=====================================*/
+
+.ficha{
+
+background:white;
+
+padding:30px;
+
+border-radius:10px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+margin-bottom:30px;
+
+}
+
+.ficha h2{
+
+margin-bottom:20px;
+
+color:var(--principal);
+
+}
+
+.ficha table{
+
+width:100%;
+
+}
+
+.ficha th{
+
+width:260px;
+
+background:#F4F6F8;
+
+color:#333;
+
+}
+
+.ficha td{
+
+background:white;
+
+}
