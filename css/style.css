@@ -505,3 +505,22 @@ color:#333;
 background:white;
 
 }
+/*=====================================
+CONCLUSIONES
+=====================================*/
+
+.conclusiones{
+
+    margin-left:30px;
+
+    line-height:2;
+
+    text-align:justify;
+
+}
+
+.conclusiones li{
+
+    margin-bottom:12px;
+
+}
