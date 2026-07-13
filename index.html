@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SIPC | Sistema Integral de Pericias Contables</title>
+    <title>SIPC | Sistema Integral de Pericias Contables</title>
 
-<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -18,33 +17,33 @@
 
 <header>
 
-<div class="logo">
+    <div class="logo">
 
-SIPC
+        SIPC
 
-</div>
+    </div>
 
-<div class="titulo">
+    <div class="titulo">
 
-<h1>Sistema Integral de Pericias Contables</h1>
+        <h1>Sistema Integral de Pericias Contables</h1>
 
-<p>CPC Jesús Ángel Cárdenas Simon</p>
+        <p>CPC Jesús Ángel Cárdenas Simon</p>
 
-</div>
+    </div>
 
 </header>
 
 <nav>
 
-<a href="index.html">🏠 Inicio</a>
+    <a href="index.html">🏠 Inicio</a>
 
-<a href="historial.html">📂 Expedientes</a>
+    <a href="historial.html">📂 Expedientes</a>
 
-<a href="nuevo.html">📄 Nuevo Informe</a>
+    <a href="nuevo.html">📄 Nuevo Informe</a>
 
-<a href="#">📚 Biblioteca</a>
+    <a href="#">📚 Biblioteca</a>
 
-<a href="#">⚙ Configuración</a>
+    <a href="#">⚙ Configuración</a>
 
 </nav>
 
@@ -60,7 +59,7 @@ Bienvenido al Sistema Integral de Pericias Contables
 
 <p>
 
-Seleccione una opción del menú para comenzar.
+Seleccione una opción para comenzar.
 
 </p>
 
@@ -84,9 +83,9 @@ Crear un nuevo expediente pericial.
 
 <a href="nuevo.html">
 
-<button>
+<button class="btn">
 
-Crear
+Crear Expediente
 
 </button>
 
@@ -110,9 +109,9 @@ Consultar expedientes registrados.
 
 <a href="historial.html">
 
-<button>
+<button class="btn">
 
-Abrir
+Abrir Historial
 
 </button>
 
@@ -124,17 +123,17 @@ Abrir
 
 <h3>
 
-📚 Biblioteca
+📚 Biblioteca Jurídica
 
 </h3>
 
 <p>
 
-Normativa y jurisprudencia.
+Normativa, jurisprudencia y doctrina.
 
 </p>
 
-<button>
+<button class="btn">
 
 Próximamente
 
@@ -162,19 +161,31 @@ Próximamente
 
 <th>Cliente</th>
 
+<th>Expediente</th>
+
 <th>Materia</th>
 
 <th>Fecha</th>
 
 <th>Estado</th>
 
-<th></th>
+<th>Acción</th>
 
 </tr>
 
 </thead>
 
 <tbody id="tablaExpedientes">
+
+<tr>
+
+<td colspan="7" style="text-align:center">
+
+No existen expedientes registrados.
+
+</td>
+
+</tr>
 
 </tbody>
 
@@ -186,7 +197,7 @@ Próximamente
 
 <footer>
 
-Sistema Integral de Pericias Contables © 2026
+Sistema Integral de Pericias Contables (SIPC) © 2026
 
 </footer>
 
