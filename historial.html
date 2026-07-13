@@ -1,1 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Historial de Expedientes | SIPC</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+SIPC
+
+</div>
+
+<div class="titulo">
+
+<h1>Historial de Expedientes</h1>
+
+<p>Sistema Integral de Pericias Contables</p>
+
+</div>
+
+</header>
+
+<nav>
+
+<a href="index.html">🏠 Inicio</a>
+
+<a href="historial.html">📂 Expedientes</a>
+
+<a href="nuevo.html">📄 Nuevo</a>
+
+<a href="biblioteca.html">📚 Biblioteca</a>
+
+<a href="#">⚙ Configuración</a>
+
+</nav>
+
+<main>
+
+<section class="bienvenida">
+
+<h2>
+
+Expedientes Periciales
+
+</h2>
+
+<p>
+
+Desde esta pantalla podrá consultar, buscar, abrir y administrar todos los expedientes registrados en el sistema.
+
+</p>
+
+</section>
+
+<section class="barra">
+
+<input
+type="text"
+placeholder="Buscar por código, cliente, demandante o expediente..."
+id="buscar">
+
+<button class="btn">
+
+Buscar
+
+</button>
+
+<a href="nuevo.html">
+
+<button class="btn">
+
+➕ Nuevo Expediente
+
+</button>
+
+</a>
+
+</section>
+
+<section class="tabla">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Código</th>
+
+<th>Cliente</th>
+
+<th>Demandante</th>
+
+<th>Demandado</th>
+
+<th>Expediente</th>
+
+<th>Materia</th>
+
+<th>Fecha</th>
+
+<th>Estado</th>
+
+<th>Acciones</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>IPC-2026-001</td>
+
+<td>Haide Umeres Saldivar</td>
+
+<td>Haide Umeres</td>
+
+<td>Perpetua Umeres</td>
+
+<td>0001-2026</td>
+
+<td>Liquidación Financiera</td>
+
+<td>13/07/2026</td>
+
+<td>
+
+<span class="estado terminado">
+
+Terminado
+
+</span>
+
+</td>
+
+<td>
+
+<button class="btn">
+
+Abrir
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td colspan="9" style="text-align:center">
+
+Los nuevos expedientes aparecerán automáticamente en esta tabla.
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+</main>
+
+<footer>
+
+Sistema Integral de Pericias Contables (SIPC)
+
+</footer>
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
