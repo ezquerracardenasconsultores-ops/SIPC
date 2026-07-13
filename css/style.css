@@ -391,3 +391,70 @@ background:#E2E3E5;
 color:#444;
 
 }
+/*=====================================
+FORMULARIOS
+=====================================*/
+
+.formulario{
+
+background:white;
+
+padding:30px;
+
+border-radius:10px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.fila{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:20px;
+
+margin-bottom:20px;
+
+}
+
+.campo{
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+.campo label{
+
+font-weight:600;
+
+margin-bottom:8px;
+
+}
+
+.campo input,
+.campo select,
+.campo textarea{
+
+padding:12px;
+
+border:1px solid #CCC;
+
+border-radius:6px;
+
+font-size:15px;
+
+font-family:inherit;
+
+}
+
+.campo textarea{
+
+resize:vertical;
+
+min-height:120px;
+
+}
