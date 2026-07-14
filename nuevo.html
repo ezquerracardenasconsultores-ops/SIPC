@@ -4,7 +4,6 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Nuevo Expediente | SIPC</title>
@@ -18,9 +17,7 @@
 <header>
 
 <div class="logo">
-
 SIPC
-
 </div>
 
 <div class="titulo">
@@ -49,21 +46,17 @@ SIPC
 
 <section class="bienvenida">
 
-<h2>
-
-Registro del Expediente
-
-</h2>
+<h2>Registro del Expediente</h2>
 
 <p>
 
-Complete la información general del expediente antes de generar el Informe Pericial.
+Complete la información general del expediente.
 
 </p>
 
 </section>
 
-<form class="formulario">
+<form id="formExpediente">
 
 <div class="fila">
 
@@ -73,7 +66,9 @@ Complete la información general del expediente antes de generar el Informe Peri
 
 <input
 type="text"
-placeholder="IPC-2026-001">
+id="codigo"
+placeholder="IPC-2026-001"
+required>
 
 </div>
 
@@ -82,7 +77,9 @@ placeholder="IPC-2026-001">
 <label>Fecha</label>
 
 <input
-type="date">
+type="date"
+id="fecha"
+required>
 
 </div>
 
@@ -95,7 +92,9 @@ type="date">
 <label>Cliente</label>
 
 <input
-type="text">
+type="text"
+id="cliente"
+required>
 
 </div>
 
@@ -104,7 +103,8 @@ type="text">
 <label>Materia</label>
 
 <input
-type="text">
+type="text"
+id="materia">
 
 </div>
 
@@ -117,7 +117,8 @@ type="text">
 <label>Demandante</label>
 
 <input
-type="text">
+type="text"
+id="demandante">
 
 </div>
 
@@ -126,7 +127,8 @@ type="text">
 <label>Demandado</label>
 
 <input
-type="text">
+type="text"
+id="demandado">
 
 </div>
 
@@ -139,7 +141,8 @@ type="text">
 <label>Expediente Judicial</label>
 
 <input
-type="text">
+type="text"
+id="expediente">
 
 </div>
 
@@ -148,7 +151,8 @@ type="text">
 <label>Juzgado</label>
 
 <input
-type="text">
+type="text"
+id="juzgado">
 
 </div>
 
@@ -161,7 +165,8 @@ type="text">
 <label>Distrito Judicial</label>
 
 <input
-type="text">
+type="text"
+id="distrito">
 
 </div>
 
@@ -169,7 +174,7 @@ type="text">
 
 <label>Estado</label>
 
-<select>
+<select id="estado">
 
 <option>En elaboración</option>
 
@@ -187,23 +192,42 @@ type="text">
 
 <label>Observaciones</label>
 
-<textarea rows="6"></textarea>
+<textarea rows="6" id="obs"></textarea>
 
 </div>
 
 <br>
 
-<button class="btn">
+<div style="display:flex;gap:15px;flex-wrap:wrap;">
 
-Guardar Expediente
+<button
+type="button"
+class="btn"
+onclick="guardarExpediente()">
+
+💾 Guardar Expediente
 
 </button>
 
-<button class="btn">
+<button
+type="button"
+class="btn"
+onclick="abrirExpediente()">
 
-Generar Informe
+📂 Abrir Expediente
 
 </button>
+
+<button
+type="button"
+class="btn"
+onclick="abrirInforme()">
+
+📄 Informe Pericial
+
+</button>
+
+</div>
 
 </form>
 
@@ -215,7 +239,55 @@ Sistema Integral de Pericias Contables (SIPC)
 
 </footer>
 
-<script src="js/app.js"></script>
+<script>
+
+function guardarExpediente(){
+
+const datos={
+
+codigo:document.getElementById("codigo").value,
+
+fecha:document.getElementById("fecha").value,
+
+cliente:document.getElementById("cliente").value,
+
+materia:document.getElementById("materia").value,
+
+demandante:document.getElementById("demandante").value,
+
+demandado:document.getElementById("demandado").value,
+
+expediente:document.getElementById("expediente").value,
+
+juzgado:document.getElementById("juzgado").value,
+
+distrito:document.getElementById("distrito").value,
+
+estado:document.getElementById("estado").value,
+
+observaciones:document.getElementById("obs").value
+
+};
+
+localStorage.setItem("expedienteActual",JSON.stringify(datos));
+
+alert("Expediente guardado correctamente.");
+
+}
+
+function abrirExpediente(){
+
+window.location.href="caso_umeres/index.html";
+
+}
+
+function abrirInforme(){
+
+window.location.href="caso_umeres/informe.html";
+
+}
+
+</script>
 
 </body>
 
